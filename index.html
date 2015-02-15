@@ -5,12 +5,30 @@
 <xmp theme="united" style="display:none;">
 
   ## Energy Aware Mining
+  This page contains pointers to all the primary data we used to conduct our study on energy-aware commits, please refer to them below 
 
-  bla bla bla
+  ## [Analysis Spreadsheet](https://docs.google.com/spreadsheets/d/1kq0z052rVHUjAggJqOt_mDueRNhzYIKixvfDmy63vvE/edit?usp=sharing)
+  This spreadsheet is a public Google Spreadsheet document that holds all the results of our analysis.
+  It includes the following sheets:
+  - 'Dashboard': contains aggregated data about overall statistics discussed in the paper
+  - 'Analysis': contains the bulk of the commits data and it also contains the final theme assigned to each commits
+  - 'OKs-Metadata': contains metadata for the Git repositories that contain at least one "OK" commit
+  - 'OKs-Metrics': contains overall metrics over the "OKs-metadata" data
+  
+ 
+  ## [MongoDb Dump](https://drive.google.com/file/d/0B_wz-3gJt0yTUUFZYXRmYy0zLUk/view?usp=sharing)
+  This dump contais GitHub metadata about users, repositories and commits and is primarily meant to be used for replication purposes since some of GitHub's data may become inaccessible*
+  It was created on 01/31/2015 and last updated on 02/14/2015
+  It contains the following collections:
+	- users:	[User metadata for repository owners](https://developer.github.com/v3/users/#get-a-single-user)
+	- repos:	[Repository metadata](https://developer.github.com/v3/repos/#get)
+	- commits: [Commits metadata](https://developer.github.com/v3/repos/commits/#get-a-single-commit)
+	- committers: [User metadata for commit committers](https://developer.github.com/v3/users/#get-a-single-user)
+	- authors:	[User metadata for commit authors](https://developer.github.com/v3/users/#get-a-single-user)
+	- blobs:	[Commits blobs for commit files contents](https://developer.github.com/v3/git/blobs/)
 
-  ## Source code
-
-  The source code is available [here](google.com).
+  *Some of the metadata was already not available when trying to download it from Github
+  
 </xmp>
 
 <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
