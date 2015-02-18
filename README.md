@@ -1,3 +1,3 @@
 # energy-aware-mining
-This repository is only for gh-pages.
+This repository is for gh-pages only.
 
